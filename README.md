@@ -9,6 +9,7 @@
 1. [Install vundle](https://github.com/VundleVim/Vundle.vim#quick-start)
     1. Make sure to install the plugins (`:PluginInstall` in vim).
 1. [Install neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-macos--linuxbrew-linux)
+1. [Install yarn](https://yarnpkg.com/en/docs/install)
 
 ## Configuration
 
