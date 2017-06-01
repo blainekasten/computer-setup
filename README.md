@@ -7,6 +7,7 @@
 1. Install tmux `brew install tmux`
 1. Install tmuxinator `sudo gem install tmuxinator`
 1. [Install vundle](https://github.com/VundleVim/Vundle.vim#quick-start)
+  - Make sure to install the plugins (`:PluginInstall` in vim).
 1. [Install neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-macos--linuxbrew-linux)
 
 ## Configuration
@@ -14,6 +15,7 @@
 1. Setup [`.zshrc`](/.zshrc)
 1. Setup [`.tmux.conf`](/.tmux.conf)
 1. Setup [`.vimrc`](/.vimrc)
+1. Setup [`neovim`](/neovim)
 
 ## Other
 
