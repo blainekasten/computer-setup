@@ -7,7 +7,7 @@
 1. Install tmux `brew install tmux`
 1. Install reattachment `brew install reattach-to-user-namespace` (lets tmux work)
 1. [Install vundle](https://github.com/VundleVim/Vundle.vim#quick-start)
-  - Make sure to install the plugins (`:PluginInstall` in vim).
+    1. Make sure to install the plugins (`:PluginInstall` in vim).
 1. [Install neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-macos--linuxbrew-linux)
 
 ## Configuration
