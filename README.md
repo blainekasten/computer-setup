@@ -7,14 +7,15 @@
 1. Install tmux `brew install tmux`
 1. Install tmuxinator `sudo gem install tmuxinator`
 1. [Install vundle](https://github.com/VundleVim/Vundle.vim#quick-start)
+1. [Install neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-macos--linuxbrew-linux)
 
 ## Configuration
 
 1. Setup [`.zshrc`](/.zshrc)
 1. Setup [`.tmux.conf`](/.tmux.conf)
 1. Setup [`.vimrc`](/.vimrc)
-1. Setup vim
 
 ## Other
 
 1. Set terminal preference profile default to "Pro".
+1. Make finder killable `defaults write com.apple.finder QuitMenuItem -bool YES`
