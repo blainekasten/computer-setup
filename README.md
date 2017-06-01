@@ -15,7 +15,7 @@
 1. Setup [`.zshrc`](/.zshrc)
 1. Setup [`.tmux.conf`](/.tmux.conf)
 1. Setup [`.vimrc`](/.vimrc)
-1. Setup [`neovim`](/neovim)
+1. Setup [`neovim`](/neovim.md)
 
 ## Other
 
