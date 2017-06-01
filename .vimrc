@@ -24,7 +24,7 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'chrisbra/Colorizer'
 Plugin 'Yggdroot/indentLine'
 Plugin 'Raimondi/delimitMate'
-Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+Plugin 'dracula/dracula-theme', {'rtp': 'vim/'}
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
