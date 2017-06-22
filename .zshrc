@@ -85,11 +85,7 @@ unalias grb
 alias chrome='cd ~/Sites/videochrome'
 alias engine='cd ~/Sites/enginevideo'
 alias spa='cd ~/Sites/multiverse/vspa/Hudl.Videospa.Webapp/VideoSPA_UI'
-alias coflux='cd ~/Sites/coflux'
 alias playback='cd ~/Sites/videoplayback'
-alias pulse='cd ~/Sites/pulselabs-homepage/'
-alias appollo='cd ~/Sites/AppolloWeb/'
-alias adio='cd ~/Sites/adio/'
 
 alias gvi='open https://github.com/hudl/js-hudl-video-interface';
 alias gengine='open https://github.com/hudl/npm-video-page-engine';
@@ -97,10 +93,10 @@ alias gspa='open https://github.com/hudl/hudl-videospa';
 
 alias onport='lsof -i :5000'
 
-alias tcengine= 'open http://teamcity.thorhudl.com/viewType.html?buildTypeId=NpmPackages_HudlVideoPageEngine_HudlVideoPageEngine';
+alias tcengine='open http://teamcity.thorhudl.com/viewType.html?buildTypeId=NpmPackages_HudlVideoPageEngine_HudlVideoPageEngine';
 
 syntax () { highlight -O rtf $1 | pbcopy }
 
-source ~/.bin/tmuxinator.zsh
+export PATH="$HOME/.yarn/bin:$PATH"
 
-export PATH="$HOME/.yarn/bin:$PATH”
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
