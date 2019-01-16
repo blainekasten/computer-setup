@@ -88,7 +88,8 @@ alias gpop='git checkout -'
 alias grbm='gck master && git pull && gck - && git rebase master -p && git push -f'
 unalias grb
 
-syntax () { highlight -O rtf $1 | pbcopy }
+# Custom bash functions
+onport () { lsof -i :$1 } # onport 3000 -> gets active commands on port 3000
 
 export PATH="$HOME/.yarn/bin:$PATH"
 
