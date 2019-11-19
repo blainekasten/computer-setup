@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/blainekasten/.oh-my-zsh
+export ZSH=/Users/kastens/.oh-my-zsh
 
 # Temp Hack
 export NODE_ENV=development
@@ -79,6 +79,7 @@ alias zshrc="vim ~/.zshrc"
 alias v="nvim ./"
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 alias gb="git for-each-ref --count=7 --sort=-committerdate refs/heads/ --format='%(color:bold magenta)%(refname:short)%(color:reset) %(color:white)%(committerdate:relative)%(color:reset)'"
+alias gbd="git branch -d"
 alias gs='git status'
 alias ga='git add -A & git commit -m '
 alias gck='git checkout'
@@ -88,21 +89,25 @@ alias gpop='git checkout -'
 alias grbm='gck master && git pull && gck - && git rebase master -p && git push -f'
 unalias grb
 
-# Custom bash functions
-onport () { lsof -i :$1 } # onport 3000 -> gets active commands on port 3000
+alias adio='cd ~/Sites/adio'
+alias adioapp='cd ~/Sites/AdioApp2'
+alias throwaway='cd ~/throwaway'
+alias gtsby='cd ~/Sites/gatsby'
 
+syntax () { highlight -O rtf $1 | pbcopy }
+
+onport () { lsof -i :$1 }
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH="$HOME/.yarn/bin:$PATH"
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$HOME/.cargo/bin:$PATH
 
-# n - setup
-# export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
-# nvm - setup
-# export NVM_DIR="$HOME/.nvm"
-#  . "/usr/local/opt/nvm/nvm.sh"
+eval "$(rbenv init -)"
 
-# autoenv - setup
-# source /usr/local/Cellar/autoenv/0.2.1/activate.sh
-# source /usr/local/opt/autoenv/activate.sh
-
-# rbenv - setup
-# eval "$(rbenv init -)"
+export NVM_DIR="$HOME/.nvm"
+[[ -s "$NVM_DIR/nvm.sh" ]] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[[ -s "$NVM_DIR/bash_completion" ]] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
