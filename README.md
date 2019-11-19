@@ -4,7 +4,7 @@
 
 1. [Install brew](https://brew.sh/)
 1. [Install zsh](https://github.com/robbyrussell/oh-my-zsh#via-curl)
-1. [Install `n`](https://github.com/tj/n)
+1. [Install `nvm`](https://github.com/nvm-sh/nvm#installation-and-update)
 1. Install tmux `brew install tmux`
 1. Install reattachment `brew install reattach-to-user-namespace` (lets tmux work)
 1. [Install vundle](https://github.com/VundleVim/Vundle.vim#quick-start)
